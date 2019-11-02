@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DT财经-你竟然是这样的月饼</title>
+    <!--指定网页使用的图标-->
+    <link rel="shortcut icon" href="lib/logo.png">
+    <!--引入Jquery和Bootstrap-->
+    <script src="lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <!--一个隐藏的div，保存一张项目的缩略图，因为网页爱微信中转发时微信会默认使用第一个img标签对应的图片-->
+    <div style="display: none">
+        <img src="lib/img/thumb.png" alt="">
+    </div>
+    <!--设置样式  相当于一个css文件  -->
+    <style>
+        html{
+            background-image: url("lib/img/bg.png");
+            /*横宽都为100%*/
+            background-size: 100% 100%;
+            /*最小高度设置为100%，使得html占据整个浏览器窗口且背景图片能够全部铺满*/
+            min-height: 100%;
+        }
+        body{
+            /*字体和颜色*/
+            font-family: "Microsoft YaHei UI";
+            color: #fff;
+            /*html中已经有背景图片了，body的背景设置为透明*/
+            background: transparent;
+            /*设计网页时，一般会让html和body占据浏览器的全部宽度，在网页内容超出浏览器高度时，用滚动页面浏览的方法*/
+            width: 100%;
+            /*将-webkit-font-smoothing设置为none,非常模糊*/
+            /*将-webkit-font-smoothing设置为antialiased,变得非常平滑,效果非常不错*/
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #header{
+            /*-relative（相对定位）：生成相对定位的元素，通过top,bottom,left,*/
+            /*right的设置相对于其正常（原先本身）位置进行定位。可通过z-index进行层次分级。　　*/
+            /*-absolute（绝对定位）：生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。*/
+            /*元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。可通过z-index进行层次分级。*/
+            /*--------header设置为relative，从而便于控制子元素的位置；只要子元素设置为absolute，结合top等属性即可*/
+            position: relative;
+        }
+        #content #name,
+        #content #gender,
+        #content #star,
+        #content #area{
+            width: 50%;
+            margin: 8px auto;
+        }
+        /*设置文本框的样式*/
+        #content input{
+            z-index: 999;
+            border: none;
+            outline: none;
+            box-shadow: 1px 1px 1px rgba(20,20,20,0.4);
+        }
+        /*下拉菜单的样式*/
+        #content.div{
+            /*父元素设为相对定位，div元素跟随父元素*/
+            position: absolute;
+            bottom: 34px;
+            left: 0;
+            width: 100%;
+            /*没有进入下拉菜单时隐藏*/
+            display: none;
+            z-index: 999;
+        }
+        /*select设置*/
+        #content .select:hover {
+            cursor: pointer;
+        }
+        #content.select.active{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+</head>
+<!--JQuery  设置js代码-->
+<script>
+    $(document).ready(function () {
+        $('#layer').css('height',$('#layer').width()*0.86243);
+        $('#moon').css('top',30 + $('#circle').width()*0.25);
+        // 判断是否处于下拉菜单状态
+        var selecting = false;
+        var select;
+        var name='';
+        var gender='';
+        var star='';
+        var area='';
+        $('input[name="name"]').val(name);
+        $('.select[name="gender"]').val(gender);
+        $('.select[name="star"]').val(star);
+        $('.select[name="area"]').val(area);
+        //处理下拉菜单选择事件
+        $('.select').click(function (event) {
+            // 阻止事件的默认处理
+            event.preventDefault();
+            if(!selecting){
+                select = $(this).attr(name);
+                selecting = true;
+
+                $(this).addClass('active');
+                $(this).siblings('div.div').show();
+            }
+        });
+    });
+
+</script>
+<body>
+    <!--首页主要包括两个部分，上部分的图片和下部分的表单，用两个div标签实现-->
+
+    <!--图片内容-->
+    <div id="header">
+        <!--一张header的背景图-->
+        <!--opacity:设置透明度；默认为1，完全不透明；0即为完全透明-->
+        <div id="layer" style="width: 100% ;opacity: 0.3;">
+            <!--margin-bottom: -20px:向下移动20px    alt:如果无法显示图像，浏览器将显示替代文本-->
+            <img src="lib/img/layer.png" alt="" style="width: 100% ;margin-bottom: -20px">/
+        </div>
+        <!--修饰背景图的一大堆图片-->
+
+        <!--仅设置absolutehui原背景不会变化，**不设置absolute原背景适应图片加长**;所以设置了absolute
+        一定要啊啊啊啊要设置top等属性，否则会另开一个背景；fixed模式也一样-->
+        <!--z-index: 设置覆盖优先级，值高的优先显示并覆盖下方的元素;
+         top:离顶部30px ; left: 24%/2 实现居中-->
+
+        <!--设置月亮-->
+        <img src="lib/img/circle700.gif  " alt="" style="width: 76% ; position: absolute ;top: 30px  ;left:12% ;
+    opacity: 1;z-index: 99" id="circle">
+        <img src="lib/img/moon.png       " alt="" style="width: 38% ; position: absolute ;             left:31% ;
+    opacity: 1;z-index: 98" id="moon">
+
+        <!--设置标题  这里不设置absolute，背景图片即可适应高度-->
+        <img src="lib/img/title.png     " alt="" style="width: 70% ; opacity: 1 ;margin-left: 15% ;
+    margin-right: 15%;" id="title">
+
+        <!--加两片叶子  fixed 一直存在于页面上 ；absolute 跟随页面移动，相对静止-->
+        <img src="lib/img/leaf_left.gif " alt="" style="width: 18% ; position: fixed    ;z-index: -1 ;
+    bottom: 18% ;left: 0 ">
+        <img src="lib/img/leaf_right.gif" alt="" style="width: 14% ; position: fixed    ;z-index: -1 ;
+    bottom: 18% ;right: 0">
+
+        <!--加几多云呐-->
+        <img src="lib/img/cloud1.png    " alt="" style="width: 25% ; position: absolute ;top: 20% ;left:5% ;
+    opacity: 1;z-index: 10">
+        <img src="lib/img/cloud2.png    " alt="" style="width: 10% ; position: absolute ;top: 30% ;right:15% ;
+    opacity: 1;z-index: 10">
+
+        <!--加一个DT的吉祥物-->
+        <img src="lib/img/xiaoD.png     " alt="" style="width: 30% ; position: absolute ;top: 55% ;right:20% ;
+    opacity: 1;z-index: 99" id="xiaoD">
+    </div>
+
+    <!--表单内容-->
+    <div id="content" style="opacity: 1">
+        <!--姓名框-->
+        <div id="name">
+            <!--表单控件加上类form-control后，效果为：-->
+            <!--宽度为100%-->
+            <!--设置边框为浅灰色-->
+            <!--控件具有4px的圆角-->
+            <!--设置阴影效果，元素得到焦点时，阴影和边框效果会发生变化-->
+            <!--设置placeholder的颜色为#999-->
+            <input type="text" name="name" placeholder="姓名" class="form-control">
+        </div>
+        <!--性别框，较复杂-->
+        <div style="position: relative" id="gender">
+            <input type="text" name="gender" placeholder="性别" class="form-control select" readonly="true">
+            <div class="div" name="gender">
+                <div class="cell" name="男">男</div>
+                <div class="cell" name="女">女</div>
+            </div>
+        </div>
+        <!--星座框-->
+        <div style="position: relative" id="star">
+            <input type="text" name="star" placeholder="星座" class="form-control select" readonly="true">
+            <div class="div" name="star">
+                <div class="cell" name="双子">双子</div>
+                <div class="cell" name="双鱼">双鱼</div>
+                <div class="cell" name="处女">处女</div>
+                <div class="cell" name="天枰">天枰</div>
+                <div class="cell" name="天蝎">天蝎</div>
+                <div class="cell" name="射手">射手</div>
+                <div class="cell" name="巨蟹">巨蟹</div>
+                <div class="cell" name="魔蝎">魔蝎</div>
+                <div class="cell" name="水瓶">水瓶</div>
+                <div class="cell" name="狮子">狮子</div>
+                <div class="cell" name="白羊">白羊</div>
+                <div class="cell" name="金牛">金牛</div>
+            </div>
+        </div>
+        <!--居住地区-->
+        <div style="position: relative" id="area">
+            <input type="text" name="area" placeholder="地域" class="form-control select" readonly="true">
+            <div class="div" name="area">
+                <div class="cell" name="东北">东北</div>
+                <div class="cell" name="华东">华东</div>
+                <div class="cell" name="华中">华中</div>
+                <div class="cell" name="华北">华北</div>
+                <div class="cell" name="华南">华南</div>
+                <div class="cell" name="西北">西北</div>
+                <div class="cell" name="西南">西南</div>
+            </div>
+        </div>
+        <!--开始测试按钮-->
+        <button class="btn btn-default disabled" id="begin">开始测试</button>
+    </div>
+</body>
+</html>

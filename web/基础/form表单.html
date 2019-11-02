@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <!--form表单 能够接收用户输入并且可以被赋值的标签统称为表单标签，如文本框、单选框、多选框、下拉菜单-->
+    <!--action属性指定响应函数，method指定提交的http请求类型-->
+    <form action="" method="post">
+        <!--输入框，placeholder指定输入为空时页面上显示的内容-->
+        用户名<input type="text" placeholder="用户名" name="username"/>
+        密码<input type="text" placeholder="密码" name="username"/>
+        <!--下拉列表-->
+        <select>
+            <option value="北京">北京</option>
+            <option value="上海">上海</option>
+            <option value="广州">广州</option>
+            <option value="深圳">深圳</option>
+        </select>
+        <!--文本框-->
+        一大段文本<textarea rows="10" cols="10" placeholder="一大段文本" name="content"></textarea>
+        <!--按钮，submit属性表示单击按钮后将触发提交操作，form内全部表单标签的值都会一并提交给action中定义的函数处理-->
+        <button type="submit">登陆</button>
+    </form>
+</body>
+</html>

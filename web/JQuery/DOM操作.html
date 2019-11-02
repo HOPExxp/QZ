@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM操作</title>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <p>这是段落内容</p>
+    <h1 name="test"></h1>
+    <h2>each测验</h2>
+    <h2>each测验</h2>
+    <h2>each测验</h2>
+    <h2>each测验</h2>
+    <h2>each测验</h2>
+</body>
+<script>
+    $(document).ready(function () {
+        $("p").html('<span>html函数</span>');
+        // $("p").text('<span>text函数</span>')
+        // 设置标签属性
+        $("h1").attr('name','hahahahaha');
+        // 读取属性
+        var name = $("h1").attr('name');
+        console.log(name);
+        // 添加元素 append 在最后面添加直接子元素；prepend 在最前面添加子元素
+        //        before 在元素前添加一个兄弟元素；after 在元素后添加一个兄弟元素
+        $("h1").append('<p>最后添加直接子元素</p>');
+        $("h1").prepend('<p>前面添加直接子元素</p>');
+        $("h1").before('<p>前面添加兄弟元素</p>');
+        $("h1").after('<p>最后添加兄弟元素</p>');
+        //删除元素  remove 删除选定的dom元素 ； empty 清空dom元素的所有后代元素
+        //设置css属性
+        $("h1").css('color','purple');
+        //遍历和关系
+        //each  选择多个dom元素时分别处理元素使用
+        $("h2").each(function (index, el) {
+            if (index % 2 == 0){
+                $(this).css('color','green');
+            }
+            else {
+                $(this).css('color','red');
+            }
+        })
+        //获取dom元素变量
+    })
+</script>
+</html>

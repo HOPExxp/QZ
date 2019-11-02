@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+</head>
+<body>
+    <p id="main">这是主要的一段内容</p>
+    <h1 class="content">
+        这是一级标题
+        <p>
+            hahahahha
+            <p>hahahahha</p>
+        </p>
+    </h1>
+    <p>这是一段内容</p>
+    <h1 class="content">这是一级标题</h1>
+    <p class="content">这是一段内容</p>
+    <!--若DOM元素符合多个选择器，则会对CSS样式进行合并覆盖操作-->
+    <!--标签名、class、id优先级依次提高，优先级高的覆盖优先级低的-->
+    <style>
+        /*后代选择器,h1下的所有p标签  --  空格*/
+        /*子元素选择器，h1的直接子元素p标签  --  > */
+        h1 p{
+            color: purple;
+        }
+        /*兄弟选择器；~普通相邻 ， + 直接相邻*/
+        h1+p{
+            color: purple;
+        }
+        /*id作为选择器，使用 # */
+        #main{
+            color: red;
+        }
+        /*class属性值作为选择器   */
+        .content{
+            color: green;
+        }
+        /*伪类选择器  :hover */
+        h1:hover{
+            color: blue;
+        }
+    </style>
+</body>
+</html>

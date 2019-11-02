@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>效果、动画</title>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>这里是h1的内容</h1>
+    <button id="yc">隐藏</button>
+    <button id="xs">显示</button>
+    <h2 style="position: relative">这是一段简单的动画</h2>
+    <h3></h3>
+    <h4>这是h4的内容</h4>
+</body>
+<script>
+    $(document).ready(function () {
+        // 显示、隐藏
+        $("#yc").click(function () {
+            $("h1").hide()
+        });
+        $("#xs").click(function () {
+            $("h1").show()
+        });
+        // 动画
+        $("h2").animate({
+            top:100,
+            left:100
+        },2000);
+        // Jquery支持链式操作，选择一个选择器后可以执行多个action()
+        $("h3").text("链式操作").animate({
+            top:100,
+            left:100
+        },2000).fadeOut(5000);
+        $("h4").fadeOut(5000,function () {
+            console.log('淡出结束')
+        })
+    })
+</script>
+</html>

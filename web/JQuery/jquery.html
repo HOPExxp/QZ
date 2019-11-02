@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<style>
+    h3:hover{
+        color: #6ebade;
+    }
+</style>
+<body>
+    <button>点我</button>
+    <h1></h1>
+    <h1 name="test"></h1>
+    <h2>我是h2</h2>
+    <h3>我是h3</h3>
+    <input type="text"/>
+    <p></p>
+</body>
+<script>
+    $(document).ready(function () {
+        // $("h1").text("你好")
+        $("button").click(function () {
+            $("h1").text("我是h1");
+            $('h1[name="test"]').text('我是一个特殊的h1')
+        });
+        // 鼠标进入事件
+        $("h2").mouseenter(function () {
+            // this -- 触发事件的标签
+            $(this).text('鼠标进入了')
+        });
+        // 鼠标离开事件
+        $("h2").mouseleave(function () {
+            // this -- 触发事件的标签
+            $(this).text('鼠标离开了')
+        });
+        // hover监控事件
+        $("h3").hover(function () {
+            $(this).text('进来了')
+        },function () {
+            $(this).text('走了')
+        })
+        $("input").keyup(function () {
+            var content=$(this).val();
+            $("p").text(content);
+        })
+    })
+</script>
+</html>

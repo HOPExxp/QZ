@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX请求</title>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    $.ajax({
+        url: 'data.json',
+        type: 'GET',
+        dataType: 'json',
+        data: {},
+    })
+        .done(function (data) {
+            console.log(data);
+            console.log("success");
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function () {
+            console.log("complete");
+        });
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax原理</title>
+</head>
+<script>
+    function loadXmlDoc() {
+        //新建XMLHttpRequest对象
+        var xmlhttp;
+        if(window.XMLHttpRequest){
+            xmlhttp = new XMLHttpRequest();
+        }else {
+            xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        // 监听服务器的响应
+        xmlhttp.onreadystatechange=function () {
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                document.getElementById('myDiv').innerHTML = xmlhttp.responseText
+            }
+        };
+        xmlhttp.open("GET","./test.asp",true);
+        // xmlhttp.open("GET","./test.asp?t="+Math.random(),true);
+        xmlhttp.send()
+    }
+</script>
+<body>
+    <button type="button" onclick="loadXmlDoc()">请求数据</button>
+    <div id="myDiv">
+        hahahahahaha
+    </div>
+</body>
+</html>

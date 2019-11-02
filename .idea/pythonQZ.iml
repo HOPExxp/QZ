@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dayajichu" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python全栈 书籍" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/菜鸟教程100例" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pingchang" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python全栈 书籍/chap1词频统计" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/嵩天第二版" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/菜鸟教程" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/爬虫一" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/爬虫三" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/爬虫 从html中解析数据" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya/james 爬虫4例" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app李sb/爬取app" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya进阶/网络编程" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app李sb/解密" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app李sb/kaoyanbang" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/internet_programing" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/老男孩基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya进阶/并发编程" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya进阶/数据库" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya进阶" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app李sb" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya/james 爬虫4例/image" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya/james 爬虫4例/WyyMusic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/PIL_test/hhh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/PIL_test/sdq" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/PIL_test/nc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/PIL_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-15" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-16" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/csv_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/char_picture" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/csv_html_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/json_csv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/CSS样式" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/JS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/JQuery" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/实战" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/实战/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/实战/lib/img" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-18" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/实战/lib/img/cakes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-19" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-20" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-21" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-22数据储存" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-28" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-29ajax请求" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-29ajax请求/jiepai" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-29ajax请求/img" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/9-1selenium" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/9-5selenium爬取淘宝商品" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/9-5selenium爬取淘宝商品/TaobaoProduct-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/9-6代理" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/daya爬虫/9-8-代理池" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/二级模拟题" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/二级模拟题/免1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/二级模拟题/9-14测验-困难" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/计算机二级/二级模拟题/9-15测验-恶魔" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/数据分析" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/数据分析/第一周" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>

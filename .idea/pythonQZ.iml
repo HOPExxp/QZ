@@ -76,6 +76,7 @@
       <sourceFolder url="file://$MODULE_DIR$/计算机二级/二级模拟题/9-15测验-恶魔" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mooc/数据分析" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mooc/数据分析/第一周" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mooc/数据分析/第二周" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />

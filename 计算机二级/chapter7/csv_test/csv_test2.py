@@ -1,5 +1,5 @@
 #原封打印
-fo = open("price2016.csv", "r")
+fo = open("price2016.csv", "r",encoding='utf-8')
 ls = []
 for line in fo:
     line = line.replace("\n","")
@@ -7,7 +7,8 @@ for line in fo:
     ls = line.split(",")
     lns = ""
     #打印输出一行的内容
-    for s in ls:
-        lns += "{}\t".format(s)
-    print(lns)
+    # for s in ls:
+    #     lns += "{}\t".format(s)
+    # print(lns)
+    print(ls)
 fo.close()

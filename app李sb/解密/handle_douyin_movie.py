@@ -28,7 +28,7 @@ with open('test.html','w') as f_w:
     f_w.write(f1_read + '\n' + tac + '\n' +f2_read)
 
 signature = input('密钥为')
-movie_url = 'https://www.douyin.com/web/api/v2/aweme/post/?user_id='+share_id+'&sec_uid=&count=21&max_cursor=0&aid=1128&_signature='+signature+'&dytk=' + dytk
+movie_url = 'https://www.douyin.com/web图书馆书/api/v2/aweme/post/?user_id='+share_id+'&sec_uid=&count=21&max_cursor=0&aid=1128&_signature='+signature+'&dytk=' + dytk
 while True:
     movie_response = requests.get(url = movie_url,headers = header)
     if json.loads(movie_response.text)['aweme_list'] ==[]:

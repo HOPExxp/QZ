@@ -46,16 +46,16 @@
       <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/char_picture" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/csv_html_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/计算机二级/chapter7/json_csv" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/基础" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/CSS样式" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/JS" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/JQuery" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/实战" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/实战/lib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/实战/lib/img" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/CSS样式" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/JS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/JQuery" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/实战" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/实战/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/实战/lib/img" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-18" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web/实战/lib/img/cakes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web图书馆书/实战/lib/img/cakes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-19" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-20" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/daya爬虫/8-21" isTestSource="false" />
